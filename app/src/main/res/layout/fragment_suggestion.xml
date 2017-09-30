@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.fajar.clothpickerapp.Fragments.Suggestion">>
+
+    <!-- activity view -->
+    <FrameLayout
+        android:id="@+id/frames"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="Why don't you try this today?"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+
+        <com.lorentzos.flingswipe.SwipeFlingAdapterView
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:rotation_degrees="15.5" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/BtnFav"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="50dp"
+            android:clickable="true"
+            android:src="@drawable/img_fav"
+            app:backgroundTint="@color/accent" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/BtnDislike"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="50dp"
+            android:clickable="true"
+            android:src="@drawable/dislikes"
+            app:backgroundTint="@android:color/holo_orange_dark" />
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/BtnShare"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:src="@drawable/imag_share"
+            app:backgroundTint="@android:color/darker_gray" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/NewComp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|left"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"
+            android:src="@drawable/new_comp"
+            app:backgroundTint="@android:color/darker_gray" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

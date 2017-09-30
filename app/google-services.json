@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "375844730031",
+    "project_id": "cloth-picker-508e4"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375844730031:android:db932d85d924157b",
+        "android_client_info": {
+          "package_name": "com.example.fajar.clothpickerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "375844730031-vhh542ucje2fi59gto4skbbqodqinc4u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fajar.clothpickerapp",
+            "certificate_hash": "fdcef8fb8d6aefdbf4ab38ec8c3b6875bfa9451f"
+          }
+        },
+        {
+          "client_id": "375844730031-cuam2rdgbibl10o2rdqs5g3aig27u74t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClFzoddGW5kMUhiudEIeoEkJj-W-GJ6ic"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
