@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.design.widget.Snackbar;
@@ -13,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import net.yazeed44.imagepicker.model.ImageEntry;
 import net.yazeed44.imagepicker.util.Picker;
@@ -34,6 +36,7 @@ public class PickPants extends AppCompatActivity {
     //Button and View
     private Button BtnPick_Pants;
     private RelativeLayout relativeLayout;
+    private TextView EmojiText;
 
 
     @Override
@@ -41,8 +44,18 @@ public class PickPants extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pick_pants);
 
+        EmojiText = (TextView) findViewById(R.id.emoji_text_pants);
         BtnPick_Pants = (Button) findViewById(R.id.BtnAddPants);
         relativeLayout = (RelativeLayout) findViewById(R.id.RelativeLayouts);
+
+        // Check if we're running on Android 6.0 or higher
+        if (Build.VERSION.SDK_INT >= 23) {
+            // Implement Text with emoji
+            EmojiText.setText("Upload all your bottom wear for the best result with ‘What to wear’ \uD83D\uDE0D");
+        } else {
+            // Implement this without emoji
+            EmojiText.setText("Upload all your bottom wear for the best result with ‘What to wear’");
+        }
 
         Snackbar snackbar = Snackbar.make(relativeLayout, "Almost there!", Snackbar.LENGTH_SHORT);
         snackbar.show();

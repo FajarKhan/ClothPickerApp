@@ -15,7 +15,7 @@
         android:drawableTop="@drawable/closet_coming_soon"
         android:fontFamily="sans-serif-light"
         android:gravity="center"
-        android:text="Not available for this test"
+        android:text="Not available for this version"
         android:textColor="@android:color/white"
         android:textSize="24sp" />
 
@@ -27,7 +27,7 @@
         android:layout_marginTop="10dp"
         android:fontFamily="sans-serif-light"
         android:gravity="center"
-        android:text="This needs more time. Will work on this only if required for this test. Let me know :)"
+        android:text="Sit Tight. This future coming soon :)"
         android:textColor="@android:color/white" />
 
 </LinearLayout>

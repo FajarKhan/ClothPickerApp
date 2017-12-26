@@ -15,6 +15,7 @@
         android:layout_marginTop="60dp">
 
         <TextView
+            android:id="@+id/suggestion_text"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_marginBottom="10dp"
@@ -22,7 +23,40 @@
             android:gravity="center"
             android:text="Why don't you try this today?"
             android:textColor="@android:color/white"
-            android:textSize="16dp" />
+            android:textSize="16dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/empty_texts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nofav_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginTop="10dp"
+                android:drawableTop="@drawable/empthy_what_to_wear"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="Suggestion list is empty"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="Start adding your cloths now!"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
 
 
         <com.lorentzos.flingswipe.SwipeFlingAdapterView
@@ -40,6 +74,7 @@
             android:layout_marginLeft="50dp"
             android:clickable="true"
             android:src="@drawable/img_fav"
+            android:visibility="gone"
             app:backgroundTint="@color/accent" />
 
         <android.support.design.widget.FloatingActionButton
@@ -51,6 +86,7 @@
             android:layout_marginRight="50dp"
             android:clickable="true"
             android:src="@drawable/dislikes"
+            android:visibility="gone"
             app:backgroundTint="@android:color/holo_orange_dark" />
 
 
@@ -63,6 +99,7 @@
             android:layout_marginRight="20dp"
             android:clickable="true"
             android:src="@drawable/imag_share"
+            android:visibility="gone"
             app:backgroundTint="@android:color/darker_gray" />
 
         <android.support.design.widget.FloatingActionButton
@@ -74,6 +111,7 @@
             android:layout_marginLeft="20dp"
             android:clickable="true"
             android:src="@drawable/new_comp"
+            android:visibility="gone"
             app:backgroundTint="@android:color/darker_gray" />
 
     </FrameLayout>

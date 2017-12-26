@@ -18,6 +18,7 @@ import android.view.ViewGroup;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.example.fajar.clothpickerapp.Adapter.AdapterSuggestion;
 import com.example.fajar.clothpickerapp.Model.model_cloths;
@@ -64,6 +65,10 @@ public class Suggestion extends Fragment {
     //Buttons
     private FloatingActionButton BtnShare, BtnFavourite, BtnDislike, BtnNewcomp;
 
+    //texts and images
+    private TextView TextSuggestion;
+    private LinearLayout TextEmptyList;
+
     //Showcase
     private Animation mEnterAnimation, mExitAnimation;
 
@@ -92,10 +97,7 @@ public class Suggestion extends Fragment {
         //initialize
         Init();
 
-        //Showcase
-        if (Preferences.getValue_String(getApplicationContext(), Preferences.FIRST_TIME).isEmpty()) {
-            Tour();
-        }
+
 
         //get cloth combination
         GetCloths();
@@ -143,6 +145,8 @@ public class Suggestion extends Fragment {
         BtnShare = (FloatingActionButton) view.findViewById(R.id.BtnShare);
         BtnFavourite = (FloatingActionButton) view.findViewById(R.id.BtnFav);
         linearLayout = (LinearLayout) view.findViewById(R.id.LinearLayout);
+        TextEmptyList = (LinearLayout) view.findViewById(R.id.empty_texts);
+        TextSuggestion = (TextView) view.findViewById(R.id.suggestion_text);
         flingContainer = (SwipeFlingAdapterView) view.findViewById(R.id.frame);
 
     }
@@ -221,6 +225,21 @@ public class Suggestion extends Fragment {
         int total_no_list_of_wear_today = _saved_Shirts.size() + _saved_Pants.size();
 
         if (_saved_Shirts.size() > 0 && _saved_Pants.size() > 0) {
+
+            //setting Visisblity
+            TextEmptyList.setVisibility(View.GONE);
+
+            BtnNewcomp.setVisibility(View.VISIBLE);
+            BtnDislike.setVisibility(View.VISIBLE);
+            BtnShare.setVisibility(View.VISIBLE);
+            BtnFavourite.setVisibility(View.VISIBLE);
+            TextSuggestion.setVisibility(View.VISIBLE);
+
+            //Showcase
+            if (Preferences.getValue_String(getApplicationContext(), Preferences.FIRST_TIME).isEmpty()) {
+                Tour();
+            }
+
             Imagearray = new ArrayList<>();
             for (int i = 0; i < total_no_list_of_wear_today; i++) {
                 //getting two random cloths from saved images
@@ -270,6 +289,13 @@ public class Suggestion extends Fragment {
 
                     if (itemsInAdapter == 0) {
                         //If the no combination left, show message
+                        TextEmptyList.setVisibility(View.VISIBLE);
+                        BtnNewcomp.setVisibility(View.GONE);
+                        BtnDislike.setVisibility(View.GONE);
+                        BtnShare.setVisibility(View.GONE);
+                        BtnFavourite.setVisibility(View.GONE);
+                        TextSuggestion.setVisibility(View.GONE);
+
                         Snackbar snackbar = Snackbar.make(linearLayout, "That's all We've Got! Try add more cloths!", Snackbar.LENGTH_LONG);
                         snackbar.show();
                     }
@@ -286,6 +312,16 @@ public class Suggestion extends Fragment {
             });
         } else {
             //if there no cloths are added
+            //setting Visisblity
+
+            TextEmptyList.setVisibility(View.VISIBLE);
+
+            BtnNewcomp.setVisibility(View.GONE);
+            BtnDislike.setVisibility(View.GONE);
+            BtnShare.setVisibility(View.GONE);
+            BtnFavourite.setVisibility(View.GONE);
+            TextSuggestion.setVisibility(View.GONE);
+
 //            Snackbar snackbar = Snackbar.make(linearLayout, "Please add more cloths to see what to wear today", Snackbar.LENGTH_LONG);
 //            snackbar.show();
         }

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.design.widget.Snackbar;
@@ -13,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import net.yazeed44.imagepicker.model.ImageEntry;
 import net.yazeed44.imagepicker.util.Picker;
@@ -34,14 +36,25 @@ public class PickShirts extends AppCompatActivity {
     //Button and View
     private Button BtnPick_Shirts;
     private RelativeLayout relativeLayout;
+    private TextView EmojiText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pick_shirts);
 
+        EmojiText = (TextView) findViewById(R.id.emogi_text);
         BtnPick_Shirts = (Button) findViewById(R.id.BtnAddShirts);
         relativeLayout = (RelativeLayout) findViewById(R.id.RelativeLayout);
+
+        // Check if we're running on Android 6.0 or higher
+        if (Build.VERSION.SDK_INT >= 23) {
+            // Implement Text with emoji
+            EmojiText.setText("Upload all your upper wear for the best result with ‘What to wear’ \uD83D\uDE0D");
+        } else {
+            // Implement this without emoji
+            EmojiText.setText("Upload all your upper wear for the best result with ‘What to wear’");
+        }
 
         //opening album user can either choose from gallery or camera (max 10 Images)
         BtnPick_Shirts.setOnClickListener(new View.OnClickListener() {
@@ -70,8 +83,8 @@ public class PickShirts extends AppCompatActivity {
             Snackbar bar = Snackbar.make(relativeLayout, "Hold on! We are adding your awesome upper wears..", Snackbar.LENGTH_INDEFINITE);
             ViewGroup contentLay = (ViewGroup) bar.getView().findViewById(android.support.design.R.id.snackbar_text).getParent();
             ProgressBar item = new ProgressBar(PickShirts.this);
-            item.setPadding(4,50,4,50);
-            contentLay.addView(item,160,160);
+            item.setPadding(4, 50, 4, 50);
+            contentLay.addView(item, 160, 160);
             bar.show();
 
             //compress selected image

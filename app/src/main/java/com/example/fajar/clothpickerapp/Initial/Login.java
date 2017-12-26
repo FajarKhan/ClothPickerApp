@@ -202,7 +202,7 @@ public class Login extends AppCompatActivity {
                                             Preferences.setValue(getApplicationContext(), Preferences.USER_ID, loginResult.getAccessToken().getUserId());
                                             Preferences.setValue(getApplicationContext(), Preferences.USER_NAME, Fb_Name);
                                             Preferences.setValue(getApplicationContext(), Preferences.USER_EMAIL, Fb_Email);
-                                            Preferences.setValue(getApplicationContext(), Preferences.USER_PROFILE_PICTURE,"https://graph.facebook.com/"+loginResult.getAccessToken().getUserId()+"/picture?type=large" );
+                                            Preferences.setValue(getApplicationContext(), Preferences.USER_PROFILE_PICTURE, "https://graph.facebook.com/" + loginResult.getAccessToken().getUserId() + "/picture?type=large");
 
 
                                             //starting Main screen
@@ -253,8 +253,9 @@ public class Login extends AppCompatActivity {
                 Preferences.setValue(getApplicationContext(), Preferences.USER_ID, result.getSignInAccount().getId());
                 Preferences.setValue(getApplicationContext(), Preferences.USER_NAME, result.getSignInAccount().getDisplayName());
                 Preferences.setValue(getApplicationContext(), Preferences.USER_EMAIL, result.getSignInAccount().getEmail());
-                Preferences.setValue(getApplicationContext(), Preferences.USER_PROFILE_PICTURE, result.getSignInAccount().getPhotoUrl().toString());
-
+                if (result.getSignInAccount().getPhotoUrl() != null) {
+                    Preferences.setValue(getApplicationContext(), Preferences.USER_PROFILE_PICTURE, result.getSignInAccount().getPhotoUrl().toString());
+                }
                 //starting Main screen
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 intent.putExtra("From", "Login");

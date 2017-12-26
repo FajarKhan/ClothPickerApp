@@ -41,7 +41,8 @@
             android:layout_marginTop="16dp"
             android:fontFamily="sans-serif-light"
             android:gravity="center"
-            android:text="Upload all your upper wear for the best result with ‘What to wear’ 😍"
+            android:id="@+id/emogi_text"
+            android:text="Upload all your upper wear for the best result with ‘What to wear’"
             android:textColor="#2d2d2e"
             android:textSize="16sp" />
     </LinearLayout>
