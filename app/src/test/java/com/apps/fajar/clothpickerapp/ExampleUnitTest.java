@@ -1,4 +1,4 @@
-package com.example.fajar.clothpickerapp;
+package com.apps.fajar.clothpickerapp;
 
 import org.junit.Test;
 

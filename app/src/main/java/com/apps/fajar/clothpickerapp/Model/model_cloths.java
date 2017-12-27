@@ -1,4 +1,4 @@
-package com.example.fajar.clothpickerapp.Model;
+package com.apps.fajar.clothpickerapp.Model;
 
 /**
  * Created by Fajar Khan on 28-Sep-17.

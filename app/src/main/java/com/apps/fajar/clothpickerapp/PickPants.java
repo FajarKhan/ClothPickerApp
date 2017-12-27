@@ -1,4 +1,4 @@
-package com.example.fajar.clothpickerapp;
+package com.apps.fajar.clothpickerapp;
 
 import android.content.Intent;
 import android.graphics.Bitmap;

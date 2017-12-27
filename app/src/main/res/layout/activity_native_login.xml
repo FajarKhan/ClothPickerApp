@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/login_grad"
     android:orientation="vertical"
-    tools:context="com.example.fajar.clothpickerapp.Initial.NativeLogin">
+    tools:context="com.apps.fajar.clothpickerapp.Initial.NativeLogin">
 
     <com.github.florent37.materialtextfield.MaterialTextField
         android:layout_width="300dp"

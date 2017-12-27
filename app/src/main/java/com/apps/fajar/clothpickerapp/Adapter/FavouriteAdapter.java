@@ -1,4 +1,4 @@
-package com.example.fajar.clothpickerapp.Adapter;
+package com.apps.fajar.clothpickerapp.Adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -8,8 +8,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.example.fajar.clothpickerapp.Model.model_cloths;
-import com.example.fajar.clothpickerapp.R;
+import com.apps.fajar.clothpickerapp.Model.model_cloths;
+import com.apps.fajar.clothpickerapp.R;
 
 import java.io.File;
 import java.util.ArrayList;

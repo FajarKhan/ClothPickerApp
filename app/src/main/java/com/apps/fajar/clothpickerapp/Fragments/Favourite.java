@@ -1,4 +1,4 @@
-package com.example.fajar.clothpickerapp.Fragments;
+package com.apps.fajar.clothpickerapp.Fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,10 +9,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.fajar.clothpickerapp.Adapter.FavouriteAdapter;
-import com.example.fajar.clothpickerapp.Model.model_cloths;
-import com.example.fajar.clothpickerapp.R;
-import com.example.fajar.clothpickerapp.Utils.Preferences;
+import com.apps.fajar.clothpickerapp.Adapter.FavouriteAdapter;
+import com.apps.fajar.clothpickerapp.Model.model_cloths;
+import com.apps.fajar.clothpickerapp.R;
+import com.apps.fajar.clothpickerapp.Utils.Preferences;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 

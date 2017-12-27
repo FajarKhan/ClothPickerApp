@@ -1,4 +1,4 @@
-package com.example.fajar.clothpickerapp.Initial;
+package com.apps.fajar.clothpickerapp.Initial;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,9 +12,9 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 
-import com.example.fajar.clothpickerapp.MainActivity;
-import com.example.fajar.clothpickerapp.R;
-import com.example.fajar.clothpickerapp.Utils.Preferences;
+import com.apps.fajar.clothpickerapp.MainActivity;
+import com.apps.fajar.clothpickerapp.R;
+import com.apps.fajar.clothpickerapp.Utils.Preferences;
 
 public class NativeLogin extends AppCompatActivity {
 

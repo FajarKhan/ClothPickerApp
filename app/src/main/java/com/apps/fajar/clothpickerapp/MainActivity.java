@@ -1,4 +1,4 @@
-package com.example.fajar.clothpickerapp;
+package com.apps.fajar.clothpickerapp;
 
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
@@ -14,12 +14,12 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.bumptech.glide.Glide;
-import com.example.fajar.clothpickerapp.Fragments.AddCloths;
-import com.example.fajar.clothpickerapp.Fragments.Closet;
-import com.example.fajar.clothpickerapp.Fragments.Favourite;
-import com.example.fajar.clothpickerapp.Fragments.Suggestion;
-import com.example.fajar.clothpickerapp.Initial.Login;
-import com.example.fajar.clothpickerapp.Utils.Preferences;
+import com.apps.fajar.clothpickerapp.Fragments.AddCloths;
+import com.apps.fajar.clothpickerapp.Fragments.Closet;
+import com.apps.fajar.clothpickerapp.Fragments.Favourite;
+import com.apps.fajar.clothpickerapp.Fragments.Suggestion;
+import com.apps.fajar.clothpickerapp.Initial.Login;
+import com.apps.fajar.clothpickerapp.Utils.Preferences;
 import com.facebook.FacebookSdk;
 import com.facebook.login.LoginManager;
 import com.mikepenz.materialdrawer.AccountHeader;

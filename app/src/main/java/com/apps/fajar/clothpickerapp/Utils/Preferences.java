@@ -1,4 +1,4 @@
-package com.example.fajar.clothpickerapp.Utils;
+package com.apps.fajar.clothpickerapp.Utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;

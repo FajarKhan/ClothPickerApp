@@ -1,4 +1,4 @@
-package com.example.fajar.clothpickerapp;
+package com.apps.fajar.clothpickerapp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

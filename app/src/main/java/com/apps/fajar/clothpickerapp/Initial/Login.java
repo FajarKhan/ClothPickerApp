@@ -1,4 +1,4 @@
-package com.example.fajar.clothpickerapp.Initial;
+package com.apps.fajar.clothpickerapp.Initial;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,9 +13,9 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.example.fajar.clothpickerapp.MainActivity;
-import com.example.fajar.clothpickerapp.R;
-import com.example.fajar.clothpickerapp.Utils.Preferences;
+import com.apps.fajar.clothpickerapp.MainActivity;
+import com.apps.fajar.clothpickerapp.R;
+import com.apps.fajar.clothpickerapp.Utils.Preferences;
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;

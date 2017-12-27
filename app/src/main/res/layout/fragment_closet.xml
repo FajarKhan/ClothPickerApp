@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:layout_marginTop="60dp"
     android:orientation="vertical"
-    tools:context="com.example.fajar.clothpickerapp.Fragments.Closet">
+    tools:context="com.apps.fajar.clothpickerapp.Fragments.Closet">
 
     <TextView
         android:id="@+id/nofav_data"

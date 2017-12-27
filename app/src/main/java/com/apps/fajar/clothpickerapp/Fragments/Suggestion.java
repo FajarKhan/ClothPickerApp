@@ -1,4 +1,4 @@
-package com.example.fajar.clothpickerapp.Fragments;
+package com.apps.fajar.clothpickerapp.Fragments;
 
 
 import android.content.Intent;
@@ -20,10 +20,10 @@ import android.view.animation.Animation;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.fajar.clothpickerapp.Adapter.AdapterSuggestion;
-import com.example.fajar.clothpickerapp.Model.model_cloths;
-import com.example.fajar.clothpickerapp.R;
-import com.example.fajar.clothpickerapp.Utils.Preferences;
+import com.apps.fajar.clothpickerapp.Adapter.AdapterSuggestion;
+import com.apps.fajar.clothpickerapp.Model.model_cloths;
+import com.apps.fajar.clothpickerapp.R;
+import com.apps.fajar.clothpickerapp.Utils.Preferences;
 import com.google.gson.Gson;
 import com.lorentzos.flingswipe.SwipeFlingAdapterView;
 

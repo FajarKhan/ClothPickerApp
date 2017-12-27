@@ -4,7 +4,7 @@ android {
     compileSdkVersion 26
     buildToolsVersion "26.0.0"
     defaultConfig {
-        applicationId "com.example.fajar.clothpickerapp"
+        applicationId "com.apps.fajar.clothpickerapp"
         minSdkVersion 20
         targetSdkVersion 21
         versionCode 1

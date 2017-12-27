@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.fajar.clothpickerapp">
+    package="com.apps.fajar.clothpickerapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -23,12 +23,12 @@
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.apps.fajar.clothpickerapp.MainActivity"
             android:configChanges="locale|keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Initial.Login"
+            android:name="com.apps.fajar.clothpickerapp.Initial.Login"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
@@ -40,16 +40,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Initial.NativeLogin"
+            android:name="com.apps.fajar.clothpickerapp.Initial.NativeLogin"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".PickShirts"
+        <activity android:name="com.apps.fajar.clothpickerapp.PickShirts"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"/>
 
-        <activity android:name=".PickPants"
+        <activity android:name="com.apps.fajar.clothpickerapp.PickPants"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
